@@ -1,0 +1,35 @@
+	/* position of 3 nav item */
+/*
+#cdc-meganav-bar .yamm .nav-item:nth-child(3) .dropdown-menu {
+    left: auto !important;
+    margin-left: -350px !important;
+}
+*/
+
+
+#cdc-meganav-bar .yamm .nav-item .nav-link:hover,
+#cdc-meganav-bar .yamm .nav-item .nav-link.selected,
+#cdc-meganav-bar .yamm .nav-item .nav-link[aria-expanded="true"] {
+    font-weight: normal;
+}
+
+
+#cdc-meganav-bar .yamm .nav-item.show .nav-link,
+#cdc-meganav-bar .yamm .nav-item.show .nav-link.active {
+   border-color: #fff;
+}
+
+#cdc-meganav-bar .yamm .dropdown-menu {
+  width: 1000px;
+}
+#cdc-meganav-bar .yamm .dropdown-menu.one-col {
+  width: 500px;
+}
+
+#cdc-meganav-mobile-menu ul li a span {
+    margin-right: 1rem;
+    min-width: 2em; 
+}
+#cdc-meganav-mobile-menu .card-header.h4.bg-primary {
+    background-color: #007c91 !important;
+}

@@ -1,0 +1,204 @@
+	/* Footer Nav Override */
+@media (max-width:992px) {
+.leftnav-wrapper nav > ul > li > ul {
+display: none;
+}
+
+.leftnav-wrapper nav > ul > li a.nav-expandcollapse {
+display: none !important;
+}
+}
+
+/* Left Nav Color Contrast */
+.theme-cyan nav ul.tp-nav-main li.active.selected>a:first-child{color:#006c80;}
+
+/* New Dropshadow */
+
+
+/* NonRounded Topborder */
+ div.card.bt-3{
+        border-radius:0rem;
+    }
+
+
+/* Print Button Mobile Hide */ 
+@media (max-width: 765px){
+#clickToPrint { display:none;}
+}
+
+/* GovD Spanish Footer Temp Hide Mobile */
+@media (max-width:576px) {
+    div.leftnav-wrapper > div.col-12.mt-5 {
+display:none;
+}
+    }
+
+/* Custom Bullet List */
+.content ul {
+    list-style: none !important;
+}
+.outlook-list {
+    list-style-type: lower-alpha;
+}
+.content ul > li:before {
+    content: "●";
+    position: absolute;
+    margin-left: -22px;
+    margin-top: 2px;
+    color: #555;
+    font-size: 80%;
+    font-weight: 600;
+}
+.content ul > li > ul > li:before {
+    content: "-";
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -15px;
+    color: #555;
+    font-size: 190%;
+    font-weight: 400;
+}
+.content ul > li > ul > li > ul > li:before {
+    content: "●";
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 3px;
+    color: #555;
+    font-size: 75%;
+}
+ul.caret-list {
+	margin-left: 0px;
+	padding-left: 0 !important;
+	list-style-type: none;
+}
+ul.caret-list li::before {
+    content: "\203A";
+    margin-left: -1.3em;
+    margin-right: 0.5em;
+    position: relative;
+}
+.content nav ul li:before, .content .nav li:before, .content ul.block-list li:before, .content ul.linked-list li:before, .content .checkbox-list li:before, .content .image-list li:before, .content ul.slick-dots li:before, .content .card-topic-media .card-body ul li:before, .content .cdc-timeline li:before, .content .page-share li:before, .content .searchTypeAheadWrap li:before, .content .list-group li:before, .unstyled-list li:before, .outlook-list li:before, .content .multi-page li:before, .content .tp-multipage li:before, .tt-error li:before, li[class*=" cdc-icon-"]:before, .commentlist li:before, .children li:before, .content .list-inline li:before, .dropdown-menu li:before, .breadcrumb li:before, .navbar-nav li:before, .pagination li:before, .carousel-indicators li:before, .content .cases-callouts li:before, .content .feed-item-list li:before, ul.checkboxes li::before, ul.checkboxes li ul li::before, ul.checkmarks li::before, .wcms-map-container ul > li::before, ul.pagination li::before, .map-container ul > li::before {
+    content: none;
+    position: relative;
+    margin-left: 0px;
+}
+
+/*  Add space to lists in cards, as well as line spacing to nested unordered lists */
+
+ul > li > ul {
+  margin-top: 5px;
+}
+
+ul > li > ol {
+  margin-top: 5px;
+}
+
+ol > li > ol {
+  margin-top: 5px;
+}
+
+ol > li > ul {
+  margin-top: 5px;
+}
+
+.content .card .card-body > ul {
+  margin: 0px 15px 17px;
+}
+.content .card .card-body > ol {
+  margin: 0px 15px 17px;
+}
+.content .multi-page .card-body > ul, .content .card-body > ul.block-list, .content nav ul, .content .nav ul, .content .card-body > ul.linked-list, .content .card-body > ul.checkbox-list, .content .card-body > ul.image-list , .content .card-body > ul.slick-dots {
+  margin: 0px 0px 17px;
+}
+
+/* Mobile Footer fix */
+.cdc-2020-footer .covid-mobile-footer .accordion .card-header {
+  border-top: 0 !important;
+}
+.cdc-2020-footer .covid-mobile-footer .accordion .card-header::after {
+  font-size: 1.5em;
+  top: 24px !important;
+  width: auto;
+  right: 34px;
+  border: 0 !important;
+}
+.cdc-2020-footer .covid-mobile-footer .accordion .card-header.collapsed::after {
+  transform: rotate(90deg);
+  right: 0 !important;
+}
+.cdc-2020-footer .covid-mobile-footer .accordion .card-header .card-title {
+  color: #fff !important;
+}
+
+
+.covid-vaccination-counts {
+  padding-left: 1rem;
+}
+
+.covid-vaccination-counts .covid-vaccination-administered .card-body,
+.covid-vaccination-counts .covid-vaccination-distributed .card-body {
+  border: 3px solid #007b91;
+}
+.covid-vaccination-counts .covid-vaccination-administered p:nth-child(1),
+.covid-vaccination-counts .covid-vaccination-distributed p:nth-child(1) {
+  margin-bottom: 0;
+}
+.covid-vaccination-counts .covid-vaccination-administered p:nth-child(2),
+.covid-vaccination-counts .covid-vaccination-distributed p:nth-child(2),
+.covid-vaccination-counts .covid-vaccination-as-of p {
+  visibility: hidden;
+}
+.covid-vaccination-counts .covid-vaccination-administered p:nth-child(2),
+.covid-vaccination-counts .covid-vaccination-distributed p:nth-child(2) {
+  font-size: 28px;
+  color: #007c91;
+}
+.covid-vaccination-counts h2 {
+  padding-bottom: 16px;
+}
+.covid-vaccination-counts .fs12 .card-icon {
+  padding: 0 17px;
+}
+.covid-vaccination-counts .card-body {
+  padding-left: 0;
+  padding-top: 3px;
+  padding-right: 0;
+}
+.covid-vaccination-counts .card-body.bg-quaternary {
+  padding-left: 0;
+}
+.covid-vaccination-counts .covid-vaccination-view-more .card {
+  margin-bottom: 0!important;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .covid-vaccination-counts .covid-vaccination-administered .card-body,
+  .covid-vaccination-counts .covid-vaccination-distributed .card-body {
+    min-height: 117px;
+  }
+
+  .covid-vaccination-counts .covid-vaccination-administered p:nth-child(1),
+  .covid-vaccination-counts .covid-vaccination-distributed p:nth-child(1) {
+    min-height: 50px;
+  }
+
+}
+
+/* Add custom color to site titlebar */
+body > div.container-fluid.site-title {
+  background-color: #035D71 !important;
+}
+body > div.container-fluid.site-title .btn-mobile-search {
+  background-color: #035D71 !important;
+  border-color: #035D71 !important;
+}
+
+/* IE fix for buttons */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .specialLinkIconLeft .row {
+    display: block !important;
+  }
+}
+
+.cdc-2020 .home-link {
+  display: none;
+}
