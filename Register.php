@@ -94,9 +94,23 @@
                                                 <form action="signup.php" method="POST">
                                                 <html lang="en">
                                                 <form action="signup.php" method="POST">
-                                                    Full name: <input type="text" name="name" /><br />
-                                                    Email: <input type="text" name="email" /><br />
-                                                    Contact number: <input type="number" name="phone_number" /><br />
+													<table>
+														<tr style="height:50px;">
+															<th>Full Name:</th>
+															<td> <input type="text" name="name"/></td>
+														</tr>
+														<tr style="height:50px;">
+															<th>Email:</th>
+															<td> <input type="text" name="email"/></td>
+														</tr>
+														<tr style="height:50px;">												
+															<th>Contact:</th>
+															<td> <input type="tel" name="phone_number"/></td>
+														</tr>
+									
+													
+													</table>
+                                                   
                                                 <input type="submit" value="Register" />
                                                 </form>
                                             </div>
