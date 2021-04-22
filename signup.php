@@ -12,7 +12,7 @@ if (empty($data['name']) ||
     die('Please fill all required fields!');
 }
 
-$myfile = fopen("registerList.txt","w");
+$myfile = fopen("registerList.txt","a");
 $txt = "\n";
 fwrite($myfile, $name);
 fwrite($myfile, $txt);
