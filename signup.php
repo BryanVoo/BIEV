@@ -11,7 +11,20 @@ if (empty($data['name']) ||
     empty($data['email'])) {
     die('Please fill all required fields!');
 }
+$registered = false;
+$handle = @fopen("registerList.txt", "r");
+    while(!feof($handle)){
+        $buffer = fgets($handle);
+        if(strpos($buffer, $phoneNumber) !== FALSE){
+            $registered = true;
+        }
+    }
+fclose($handle);
 
+if ($registered == true){
+    echo '<script>alert("You are already registered!")</script>';
+    header( "refresh:0; register.php" );
+}else{
 $myfile = fopen("registerList.txt","a");
 $txt = "\n";
 fwrite($myfile, $name);
@@ -24,5 +37,6 @@ fclose($myfile);
 
 echo '<script>alert("Register Complete")</script>';
 header( "refresh:0; home.html" );
+}
 
   
