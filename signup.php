@@ -14,7 +14,8 @@ $handle = @fopen("registerList.txt", "r");
 while (!feof($handle)) {
         $buffer = fgets($handle);
     if (strpos($buffer, $phoneNumber) !== false) {
-            $registered = true;}
+            $registered = true;
+}
 }
 fclose($handle);
 
