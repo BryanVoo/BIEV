@@ -12,10 +12,8 @@ if (empty($data['name']) || empty($data['phone_number']) || empty($data['email']
 $registered = false;
 $handle = @fopen("registerList.txt", "r");
 while (!feof($handle)) {
-        $buffer = fgets($handle);
-    if (strpos($buffer, $phoneNumber) !== false) {
-            $registered = true;
-}
+    $buffer = fgets($handle);
+        if (strpos($buffer, $phoneNumber) !== false) { $registered = true; }
 }
 fclose($handle);
 
