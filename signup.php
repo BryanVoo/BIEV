@@ -38,5 +38,5 @@ fclose($myfile);
 echo '<script>alert("Register Complete")</script>';
 header( "refresh:0; home.html" );
 }
-
+?>
   
