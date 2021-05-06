@@ -23,7 +23,7 @@ fclose($handle);
 
 if ($registered == true){
     echo '<script>alert("You are already registered!")</script>';
-    header( "refresh:0; register.php" );
+    header( "refresh:0; register.html" );
 }else{
 $myfile = fopen("registerList.txt","a");
 $txt = "\n";
