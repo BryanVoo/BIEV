@@ -11,19 +11,19 @@ if (empty($data['name']) || empty($data['phone_number']) || empty($data['email']
 }
 $registered = false;
 $handle = @fopen("registerList.txt", "r");
-    while (!feof($handle)){
+while (!feof($handle)) {
         $buffer = fgets($handle);
-    if(strpos($buffer, $phoneNumber) !== FALSE){
+    if (strpos($buffer, $phoneNumber) !== false) {
             $registered = true;
     }
-}
+    }
 fclose($handle);
 
-if ($registered == true){
+if ($registered == true) {
     echo '<script>alert("You are already registered!")</script>';
-    header( "refresh:0; register.html" );
+    header("refresh:0; register.html");
 } else {
-    $myfile = fopen("registerList.txt","a");
+    $myfile = fopen("registerList.txt", "a");
     $txt = "\n";
     fwrite($myfile, $name);
     fwrite($myfile, $txt);
@@ -33,5 +33,5 @@ if ($registered == true){
     fwrite($myfile, $txt);
     fclose($myfile);
     echo '<script>alert("Register Complete")</script>';
-    header( "refresh:0; home.html" );
-} 
+    header("refresh:0; home.html");
+}
